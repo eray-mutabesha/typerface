@@ -1,0 +1,12 @@
+@media (max-width:768px){
+    .all-cercle-div{
+        display:grid;
+       grid-template-columns: auto auto auto;
+    }
+}
+@media (max-width:425px){
+    .all-cercle-div{
+        display:grid;
+       grid-template-columns: auto auto ;
+    }
+}

@@ -1,0 +1,60 @@
+
+@use "../components/colors" as *;
+.part_one{
+    h1{
+        font-size:50px;
+        display: grid;
+        
+    }
+}
+.all-cercle-div{
+    display: flex;
+    
+    justify-content: space-between;
+    gap: 10px;
+    width: 60%;
+    div{
+        text-align: center;
+        .cercleONE {
+            width: 100px;
+            height:100px;
+            border-radius:50%;
+            background:$couleur-bleu;
+        }
+        .cercleTWO{
+            @extend .cercleONE;
+            background-color:$couleur-vert;
+
+        }
+        .cercleTREE{
+            @extend .cercleONE;
+            background-color:$couleur-bleu-ciel;
+
+        }
+        .cercleFOUR{
+            @extend .cercleONE;
+            background-color:$couleur-orange;
+
+        }
+        .cercleFIVE{
+            @extend .cercleONE;
+            background-color:$couleur-grise;
+
+        }
+    }
+}
+.all-tools{
+    .tools_cercle_div{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 25%;
+        div{
+            background-color: $couleur-blanche;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            
+        }
+    }
+}
